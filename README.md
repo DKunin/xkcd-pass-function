@@ -1,0 +1,1 @@
+# xkcd-pass-function
