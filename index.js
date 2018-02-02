@@ -19,7 +19,7 @@ function generate(flags) {
 }
 
 app.get('/', function (req, res) {
-  res.send(req.params)
+  res.send(req.query)
   res.send(generate({}));
 });
 
