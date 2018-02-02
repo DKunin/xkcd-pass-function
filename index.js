@@ -17,6 +17,7 @@ function generate(flags) {
     const words = new Array(wc)
         .fill()
         .map(() => uniqueRandomArray(mnemonicWords)());
+    return words;
     return words.join(s);
 }
 
