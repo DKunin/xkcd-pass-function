@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 function generate(flags) {
-  console.log(flags)
+    return flags;
     const wc = flags.wc || 4;
     const s = flags.s || '_';
     const words = new Array(wc)
