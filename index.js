@@ -19,8 +19,7 @@ function generate(flags) {
 }
 
 app.get('/', function (req, res) {
-  res.send(req.query)
-  res.send(generate({}));
+  res.send(generate(req.query));
 });
 
 module.exports = Webtask.fromExpress(app);
