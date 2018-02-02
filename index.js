@@ -13,7 +13,7 @@ function generate(flags) {
     
     const wc = flags.wc || 4;
     const s = flags.s || '_';
-    return wc;
+
     const words = new Array(wc)
         .fill()
         .map(() => uniqueRandomArray(mnemonicWords)());
