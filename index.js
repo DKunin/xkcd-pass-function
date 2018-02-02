@@ -19,6 +19,7 @@ function generate(flags) {
 }
 
 app.get('/', function (req, res) {
+  res.send(req.params)
   res.send(generate({}));
 });
 
