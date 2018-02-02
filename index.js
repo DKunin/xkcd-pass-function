@@ -1,9 +1,11 @@
 'use strict';
 
-var express    = require('express');
-var Webtask    = require('webtask-tools');
-var bodyParser = require('body-parser');
-var app = express();
+const express    = require('express');
+const Webtask    = require('webtask-tools');
+const bodyParser = require('body-parser');
+const uniqueRandomArray = require('unique-random-array');
+const mnemonicWords = require('mnemonic-words');
+const app = express();
 
 app.use(bodyParser.json());
 
